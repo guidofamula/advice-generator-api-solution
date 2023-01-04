@@ -7,6 +7,11 @@ const apiUrl = 'https://api.adviceslip.com/advice';
 async function runApi() {
   const api = await fetch(apiUrl);
   const data = await api.json();
+
+  if (api) {
+    hideLoading();
+  }
+
   const dataHTML = JSON.stringify(data.slip.advice);
   const idHTML = JSON.stringify(data.slip.id);
   quote.innerHTML = dataHTML;
@@ -15,6 +20,10 @@ async function runApi() {
 
 runApi();
 
+function hideLoading() {
+  loadTrans.style.display = 'none';
+}
+
 btnGenerate.addEventListener('click', function () {
   let randomAdvice = Math.floor(Math.random() * 224) + 1;
   let slipIdRandom = randomAdvice;
@@ -22,6 +31,11 @@ btnGenerate.addEventListener('click', function () {
   async function generateApi() {
     const api = await fetch(urlRandom);
     const data = await api.json();
+
+    if (api) {
+      hideLoading();
+    }
+
     const adviceHTML = JSON.stringify(data.slip.advice);
     const idHTML = JSON.stringify(data.slip.id);
     quote.innerHTML = adviceHTML;
