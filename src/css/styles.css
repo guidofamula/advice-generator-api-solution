@@ -50,18 +50,27 @@
   display: none;
 }
 
-.button-dice img {
+.button-dice {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.button-dice .border-button {
+  padding: 1rem;
+  border-radius: 100%;
+  background-color: hsl(150deg, 100%, 66%);
+  display: flex;
+  position: relative;
+  transition: ease-in-out 0.4s;
+  top: -22px;
+  cursor: pointer;
+}
+.button-dice .border-button img {
   z-index: 9999;
   background-color: hsl(150deg, 100%, 66%);
-  border-radius: 30%;
-  transition: ease-in-out 0.4s;
-  padding: 10px;
-  margin-top: 50px;
-  cursor: pointer;
-  margin-top: -22px;
-  margin-left: 258px;
 }
-.button-dice img:hover {
+
+.border-button:hover {
   box-shadow: 5px 5px 50px hsl(150deg, 100%, 66%);
 }
 
@@ -86,9 +95,6 @@
     margin-left: -7px;
     margin-top: 25px;
     margin-bottom: 30px;
-  }
-  img {
-    margin-right: 255px;
   }
   .api-generator p {
     font-size: 22px;
