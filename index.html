@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="./src/css/styles.css" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1>ADVICE #<span id="id-advice"></span></h1>
+        <div class="api-generator">
+          <p id="api-advice">
+            <span id="loading">Loading...</span>
+          </p>
+        </div>
+        <div class="pattern-divide">
+          <img class="desktop-pattern" src="./src/images/pattern-divider-desktop.svg" alt="Pattern for desktop" />
+          <img class="mobile-pattern" src="./src/images/pattern-divider-mobile.svg" alt="Pattern for mobile" />
+        </div>
+      </div>
+      <div class="button-dice">
+        <div class="border-button">
+          <img id="generate-api" src="./src/images/icon-dice.svg" alt="Icon for dice" />
+        </div>
+      </div>
+      <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="bttps://guidofamula.com">Guido Famula</a>.</div>
+    </div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>

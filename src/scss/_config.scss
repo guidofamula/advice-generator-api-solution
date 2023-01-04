@@ -1,0 +1,40 @@
+// Color Pallete
+$light-cyan: hsl(193, 38%, 86%);
+$neon-green: hsl(150, 100%, 66%);
+$blue: hsl(217, 19%, 38%);
+$dark-blue: hsl(217, 19%, 24%);
+$very-dark-blue: hsl(218, 23%, 16%);
+
+// Layout media query
+$mobile: 428px;
+$desktop: 1440px;
+
+// Container Desktop
+%container-desktop {
+  .container {
+    .pattern-divide {
+      .desktop-pattern {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 28px;
+      }
+      .mobile-pattern {
+        display: none;
+      }
+    }
+  }
+}
+
+// Font body
+$font-quote: 28px;
+
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+$fontManrope: 'Manrope', sans-serif;
+
+// Reset and setting for background default
+* {
+  font-family: $fontManrope;
+  margin: 0;
+  padding: 0;
+}

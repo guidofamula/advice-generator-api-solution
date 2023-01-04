@@ -1,0 +1,112 @@
+@import 'config';
+
+#app {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: $very-dark-blue;
+  overflow: hidden;
+}
+
+.container {
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: $dark-blue;
+  border-radius: 10px;
+  h1 {
+    color: $neon-green;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+  }
+  .api-generator {
+    margin-top: 15px;
+    text-align: center;
+    font-size: $font-quote;
+    p {
+      color: $light-cyan;
+      text-align: center;
+      word-wrap: break-word;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+.pattern-divide {
+  .desktop-pattern {
+    display: none;
+  }
+  .mobile-pattern {
+    display: none;
+  }
+}
+
+.button-dice {
+  img {
+    z-index: 9999;
+    background-color: $neon-green;
+    border-radius: 30%;
+    transition: ease-in-out 0.4s;
+    padding: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+    margin-top: -22px;
+    margin-left: 258px;
+  }
+
+  img:hover {
+    box-shadow: 5px 5px 50px $neon-green;
+  }
+}
+
+.attribution {
+  margin-top: 100px;
+  font-size: 11px;
+  font-weight: 200;
+  text-align: center;
+  color: $light-cyan;
+}
+.attribution a {
+  color: $neon-green;
+}
+
+@media (max-width: $mobile) {
+  .container {
+    width: 280px;
+    .pattern-divide {
+      .mobile-pattern {
+        display: block;
+        margin-left: -7px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  img {
+    margin-right: 255px;
+  }
+
+  .api-generator {
+    p {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .pattern-divide {
+    .desktop-pattern {
+      display: block;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-left: 28px;
+    }
+  }
+}
