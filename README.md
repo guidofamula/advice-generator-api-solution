@@ -9,10 +9,10 @@
 
 <div align="center">
   <h3>
-    <a href="https://www.frontendmentor.io/solutions/3column-preview-card-component-ePiXk_mT3R" target='_blank' color="white">
+    <a href="https://www.frontendmentor.io/solutions/advice-generator-app-xllNa9DF5C" target='_blank' color="white">
       Solution URL
     </a>
-  <span> ~||~ </span>    <a target='_blank' href="https://guidofamula.github.io/3-column-card-solution/">
+  <span> ~||~ </span>    <a target='_blank' href="https://advice-generator-api-six.vercel.app/">
       Live URL
     </a>
   <span> ~||~ </span>    <a target='_blank' href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db">
